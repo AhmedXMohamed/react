@@ -5,12 +5,12 @@ import { Button, Form, FormControl, Nav, Navbar } from "react-bootstrap"
 export const Header = (props) => {
     return (
         <Navbar bg="primary" variant="dark">
-            <Navbar.Brand href="#home">My Site</Navbar.Brand>
+            <Navbar.Brand href="/home">My Site</Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#features">Portfolio</Nav.Link>
-                <Nav.Link href="#pricing">About</Nav.Link>
-                <Nav.Link href="#pricing">Contact Me</Nav.Link>
+                <Nav.Link href="/home">Home</Nav.Link>
+                <Nav.Link href="/portfolio">Portfolio</Nav.Link>
+                <Nav.Link href="/about">About</Nav.Link>
+                <Nav.Link href="/contact">Contact Me</Nav.Link>
             </Nav>
             <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
