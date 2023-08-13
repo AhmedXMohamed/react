@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import AppVanilaBs from './AppVanilaBs';
-import AppReactBs from './AppReactBs';
-import AppReactBsForm from './AppReactBsForm';
+// import AppVanilaBs from './AppVanilaBs';
+// import AppReactBs from './AppReactBs';
+// import AppReactBsForm from './AppReactBsForm';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

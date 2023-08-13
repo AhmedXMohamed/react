@@ -1,10 +1,8 @@
-import ahmedPhoto from '../images/ahmeddini.jpeg'
-import { Card, Button, Container } from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import { Header } from './Header'
-import { Footer } from './Footer'
-
-
+import ahmedPhoto from '../images/ahmeddini.jpeg';
+import { Card, Button, /* Container */ } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import { Header } from './Header';
+// import { Footer } from './Footer';
 
 const CardExample = (props) => {
     return (
@@ -20,7 +18,7 @@ const CardExample = (props) => {
                 </Card.Body>
             </Card>
         </>
-    )
+    );
 }
 
 export default CardExample;
