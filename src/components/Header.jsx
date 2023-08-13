@@ -1,8 +1,6 @@
-import { Button, Form, FormControl, Nav, Navbar } from "react-bootstrap"
+import { Button, Form, FormControl, Nav, Navbar } from "react-bootstrap";
 
-
-
-export const Header = (props) => {
+const Header = (props) => {
     return (
         <Navbar bg="primary" variant="dark">
             <Navbar.Brand href="/home">My Site</Navbar.Brand>
@@ -17,6 +15,7 @@ export const Header = (props) => {
                 <Button variant="outline-light">Search</Button>
             </Form>
         </Navbar>
-
-    )
+    );
 }
+
+export default Header;
