@@ -7,6 +7,14 @@
   pointer-events: none;
 }
 
+.Jumbotron {
+  background-color:#0669D9 !important;
+  text-align: center;
+  color:white;
+  padding: 48px;
+
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -36,3 +44,4 @@
     transform: rotate(360deg);
   }
 }
+
