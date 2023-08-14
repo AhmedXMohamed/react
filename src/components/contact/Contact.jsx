@@ -1,8 +1,14 @@
+import { Jumbotron } from "react-bootstrap";
+import Footer from "../Footer";
+import Header from "../Header";
+
 const Contact = (props) => {
     return (
-       <div>
-          <h1>Contact us</h1>
-       </div>
+      <Jumbotron>
+      <Header />
+         <h1>Contact US</h1>
+      <Footer />
+    </Jumbotron>
     );
 }
 

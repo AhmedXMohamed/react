@@ -1,19 +1,21 @@
 import './App.css';
-import { /* Link, */ Route, /* Switch, */ BrowserRouter, Routes } from "react-router-dom";
+import { Route, Switch, BrowserRouter } from "react-router-dom";
 import Login from './components/login/Login';
 import Portfolio from './components/portfolio/Portfolio';
 import About from './components/about/About';
 import Home from './components/home/Home';
+import Contact from './components/contact/Contact';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />}/>
-        <Route path="/portfolio" element={<Portfolio />}/>
-        <Route path="/about" element={<About />}/>
-        <Route path="/contact" element={<Login />}/>
-      </Routes>
+      <Switch>
+        <Route exact path="/"> <Home /> </Route>
+        <Route path="/portfolio"><Portfolio /> </Route>
+        <Route path="/about"><About /> </Route>
+        <Route path="/contact"><Contact /> </Route>
+        <Route path="/home"> <Home /> </Route>
+      </Switch>
     </BrowserRouter>
   );
 }

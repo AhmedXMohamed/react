@@ -1,10 +1,15 @@
 // import { Button, Form, FormControl, Nav, Navbar } from "react-bootstrap";
+import { Jumbotron } from "react-bootstrap";
+import Footer from "../Footer";
+import Header from "../Header";
 
 const Portfolio = (props) => {
    return (
-      <div>
-         <h1>Portfolio us</h1>
-      </div>
+      <Jumbotron>
+      <Header />
+         <h1>Portfolio</h1>
+      <Footer />
+    </Jumbotron>
    );
 }
 
