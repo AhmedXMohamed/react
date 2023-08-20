@@ -9,12 +9,18 @@ const Home = (props) => {
     <Jumbotron>
       <Header />
       <Row>
-        <Col>   <Login />       </Col>
-        <Col>   <CardExample /> </Col>
+        <Col>
+          {" "}
+          <Login />{" "}
+        </Col>
+        <Col>
+          {" "}
+          <CardExample />{" "}
+        </Col>
       </Row>
       <Footer />
     </Jumbotron>
   );
-}
+};
 
 export default Home;
