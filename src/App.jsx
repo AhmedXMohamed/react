@@ -7,7 +7,9 @@ import Home from './components/home/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Registration from './components/registration/Registration';
-import { Data, DataLoader } from './components/data/Data';
+import { DogData, DataLoader } from './components/data/DogData';
+import JSONPlaceHolder from './components/data/JSONPlaceholder';
+// eslint-disable-next-line
 import _404 from './components/errors/_404';
 
 const App = () => {
@@ -19,18 +21,18 @@ const App = () => {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      // <Routes>
         <>
-          <Route path="*" element={<_404 />} />
+          {// eslint-disable-next-line
+          }<Route path="*" element={<_404 />} />
           <Route path="/" element={<Root />} />
           <Route index path="/home" element={<Home />}/>
           <Route path="/portfolio" element={<Portfolio />}/>
           <Route path="/about" element={<About />}/>
           <Route path="/contact" element={<Login />}/>
           <Route path="/register" element={<Registration />}/>
-          <Route path="/data" element={<Data />} loader={ DataLoader }/>
+          <Route path="/dogdata" element={<DogData />} loader={ DataLoader }/>
+          <Route path="/jsonplaceholder" element={<JSONPlaceHolder />}/>
         </>
-      // </Routes>
     )
   );
 

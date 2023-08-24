@@ -1,6 +1,6 @@
 import { useLoaderData, useNavigation } from "react-router-dom";
 
-export const Data = () => {
+export const DogData = () => {
     const dogUrl = useLoaderData();
     const navigation = useNavigation();
 
@@ -14,7 +14,8 @@ export const Data = () => {
         <div>
             <h1>Some images don't work so you should reload the pages a few times if you can't see it.</h1>
             <br />
-            <img src={dogUrl} alt="Dog image, allow images for this webpage to see the image." />
+            {// eslint-disable-next-line
+            }<img src={dogUrl} alt="Dog image, allow images for this webpage to see the image." width="1000" heigh="1000"/>
         </div>
     );
 }
@@ -25,5 +26,3 @@ export const DataLoader = async () => {
 
     return dog.url;
 }
-
-export default Data;

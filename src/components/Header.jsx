@@ -10,7 +10,8 @@ const Header = (props) => {
                 <Nav.Link href="/about">About</Nav.Link>
                 <Nav.Link href="/contact">Contact Me</Nav.Link>
                 <Nav.Link href="/register">Registration</Nav.Link>
-                <Nav.Link href="/data">Data</Nav.Link>
+                <Nav.Link href="/dogdata">Dog data</Nav.Link>
+                <Nav.Link href="/jsonplaceholder">JSONPlaceholder data</Nav.Link>
             </Nav>
             <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
