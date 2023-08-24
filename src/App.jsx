@@ -7,6 +7,7 @@ import Home from './components/home/Home';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Registration from './components/registration/Registration';
+import { Data, DataLoader } from './components/data/Data';
 import _404 from './components/errors/_404';
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/about" element={<About />}/>
           <Route path="/contact" element={<Login />}/>
           <Route path="/register" element={<Registration />}/>
+          <Route path="/data" element={<Data />} loader={ DataLoader }/>
         </>
       // </Routes>
     )
