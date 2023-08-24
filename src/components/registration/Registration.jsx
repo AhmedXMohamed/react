@@ -2,7 +2,9 @@ import React from 'react';
 
 const Registration = (props) => {
     return (
-        <div>This is the registration page</div>
+        <div>
+            <h1>This is the registration page</h1>
+        </div>
     );
 }
 
