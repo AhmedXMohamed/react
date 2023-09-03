@@ -11,16 +11,22 @@ import { DogData, DataLoader } from './components/data/DogData';
 import JSONPlaceHolder from './components/data/JSONPlaceholder';
 // eslint-disable-next-line
 import _404 from './components/errors/_404';
+import { useState } from 'react';
+
 
 const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
+  
   const Root = () => {
     return (
       <script type="text/javascript">window.addEventListener("onload",function(){window.location.href="/home"})</script>
+
     );
   }
-
+  
   const router = createBrowserRouter(
-    createRoutesFromElements(
+
+      createRoutesFromElements(
         <>
           {// eslint-disable-next-line
           }<Route path="*" element={<_404 />} />
@@ -30,6 +36,8 @@ const App = () => {
           <Route path="/about" element={<About />}/>
           <Route path="/contact" element={<Login />}/>
           <Route path="/register" element={<Registration />}/>
+          <Route path="/login" element={<Login />}/>
+          <Route path="/logout" element={<DogData />}/>
           <Route path="/dogdata" element={<DogData />} loader={ DataLoader }/>
           <Route path="/jsonplaceholder" element={<JSONPlaceHolder />}/>
         </>
@@ -39,7 +47,7 @@ const App = () => {
   return (
 
     <div className='app'>
-      <Header />
+      <Header isLoggedIn={isLoggedIn} />
       <RouterProvider router={router}/>
       <Footer />
     </div>
