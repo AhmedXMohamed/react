@@ -1,7 +1,7 @@
 import { Button, Form, FormControl, Nav, Navbar } from "react-bootstrap";
 
 const Header = (props) => {
-    const authButtons = (props) => {
+    const authButtons = () => {
         if (props.isLoggedIn) {
             return <Nav.Link href="/logout">Logout</Nav.Link>
         }
