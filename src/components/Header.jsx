@@ -25,6 +25,7 @@ const Header = (props) => {
                 {authButtons()}
                 <Nav.Link href="/dogdata">Dog data</Nav.Link>
                 <Nav.Link href="/jsonplaceholder">JSONPlaceholder data</Nav.Link>
+                <Nav.Link href="/posts">Posts</Nav.Link>
             </Nav>
             <Form inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />

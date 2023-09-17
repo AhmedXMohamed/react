@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import Registration from './components/registration/Registration';
 import { DogData, DataLoader } from './components/data/DogData';
 import JSONPlaceHolder from './components/data/JSONPlaceholder';
+import Posts from './components/redux-toolkit/Posts';
 // eslint-disable-next-line
 import _404 from './components/errors/_404';
 import { useState } from 'react';
@@ -20,7 +21,6 @@ const App = () => {
   const Root = () => {
     return (
       <script type="text/javascript">window.addEventListener("onload",function(){window.location.href="/home"})</script>
-
     );
   }
   
@@ -40,6 +40,7 @@ const App = () => {
           <Route path="/logout" element={<DogData />}/>
           <Route path="/dogdata" element={<DogData />} loader={ DataLoader }/>
           <Route path="/jsonplaceholder" element={<JSONPlaceHolder />}/>
+          <Route path="/posts" element={<Posts />}/>
         </>
     )
   );
